@@ -12,8 +12,7 @@ load_dotenv()
 
 
 class DatabaseType(enum.EnumType):
-    SQLITE = 'sqlite'
-    POSTGRESQL = 'postgresql'
+    MONGODBATLAS = 'mongodb'
 
 
 class Config:
@@ -26,8 +25,6 @@ class Config:
 
     @staticmethod
     def get_database_url():
-        if Config.DATABASE_TYPE == DatabaseType.SQLITE:
-            return f'sqlite:///{Config.get_project_root()}/database.db'
         if Config.DATABASE_TYPE == 'postgresql':
             return f'postgresql://{Config.DATABASE_USER}:{Config.DATABASE_PASSWORD}@{Config.DATABASE_HOST}:{Config.DATABASE_PORT}/{Config.DATABASE_NAME}'
         raise ValueError('Invalid database type')

@@ -19,9 +19,9 @@ app = FastAPI(
     docs_url=None,
     redoc_url=None,
     contact={
-        "name": "Luan Fernandes",
-        "email": "souluanf@icloud.com",
-        "url": "https://luanfernandes.dev"
+        "name": "Grupo 4 do Setimo semestre",
+        "email": "caiopecellin@gmail.com",
+        "users": "Ana Paula, Caio Costa, Vinicius Martins"
     },
     license_info={
         "name": "MIT",
@@ -31,10 +31,6 @@ app = FastAPI(
         {
             "url": "http://localhost:8000",
             "description": "Development server"
-        },
-        {
-            "url": "https://users.luanfernandes.dev",
-            "description": "Production server"
         }
     ],
 )

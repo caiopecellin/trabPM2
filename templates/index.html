@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Imoveis</title>
+</head>
+<body>
+    <h1>Imoveis</h1>
+    <ul>
+    {% for imovel in imoveis %}
+        <li>
+            <a href="/imoveis/{{ imovel._id }}">{{ imovel.bairro }} - {{ imovel.preco }}</a>
+        </li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

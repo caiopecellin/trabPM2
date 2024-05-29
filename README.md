@@ -1,2 +1,2 @@
-# trabPM2
-Local onde sera armazenado o trabalho de multiplataforma 2
+### Objetivo
+* Entender os usos do FastAPI e fazer uma aplicação simples para conceitual completo da matéria.

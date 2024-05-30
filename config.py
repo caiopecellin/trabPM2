@@ -18,7 +18,7 @@ class Settings(BaseSettings):
 
     @property
     def mongo_details(self) -> str:
-        return f"mongodb+srv://{self.DATABASE_USER}:{self.DATABASE_PASSWORD}@{self.DATABASE_HOST}/{self.DATABASE_NAME}?retryWrites=true&w=majority&appName={self.DATABASE_APP}"
+        return f"mongodb+srv://{self.DATABASE_USER}:{self.DATABASE_PASSWORD}@{self.DATABASE_NAME}.{self.DATABASE_HOST}/?retryWrites=true&w=majority&appName={self.DATABASE_APP}"
 
 settings = Settings()
 
